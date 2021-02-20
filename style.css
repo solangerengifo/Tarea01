@@ -1,0 +1,132 @@
+body {
+    display:block;
+    grid-auto-columns: 5fr;
+    grid-column-start: span;
+    gap: 20px;
+}
+
+header{   
+    background-color: blue;
+    color: white;
+    border: solid black;
+    font-family: 'Verdana,Geneva', sans-serif;
+    padding-left: 200px;
+}
+
+h1{
+    font-family: 'Verdana,Geneva', sans-serif;
+    font-size: 40px;
+    padding-left: 40px;
+}
+
+#login{
+
+    width: 80px;
+    height: 80px;
+    opacity: 60%;
+    padding-left: 930px;
+}
+
+
+#imagen_buscador {
+    width: 38px;
+    height: 38px;
+}
+
+
+nav{
+    grid-column: 1 / 4 ; /* span 3*/
+    background-color: white;
+    border: solid black;
+    margin-top: 20px;
+    margin-block-end: 20px;
+    padding-left: 1000px;
+}
+
+main{
+    grid-column: 1 / 4 ;
+    display: grid ;
+    align-items:center;
+    gap: 80px; /*separacion entre elementos*/
+    border: solid black;
+    padding: 40px;
+}
+
+main nav{
+    background-color: lightblue;
+    padding-left: 30px;
+    padding-inline-end: 30px;
+    padding-block-end: 20px;
+}
+
+
+section nav {  
+    width: 25%;   
+    margin-right: 50px;
+    padding-top: 0px;
+    scroll-padding-top: 0px;
+    background: lightblue;
+    float:left;
+    border:solid black  ;
+    text-align:initial;
+   
+}
+
+
+main form{
+    background-color: lightblue;
+    padding: 40px;  
+    display:grid;
+    border: solid black;
+}
+
+
+form{
+    background-color: lightblue;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    padding-block-end: 50px;
+}
+
+
+
+nav article{
+    padding-top: 5px;
+    padding-left: 10px;
+    border: solid black;
+    padding-inline-start: 120px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+
+#imagen_agregar {
+    width: 60px;
+    height: 60px;
+}
+
+#imagen_administrar {
+    width: 80px;
+    height: 80px;
+}
+
+#imagen_existencias {
+    width: 80px;
+    height: 80px;
+}
+
+#imagen_pagos {
+    width: 80px;
+    height: 80px;
+}
+
+footer{
+    background-color: cornflowerblue;
+    color: black;
+    border: solid black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 48px;
+    margin-block: 20px;
+    padding-left: 10px;
+}

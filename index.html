@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header> 
+
+        <h1>Sistema Integrado de Gestión </h1>          
+            <img id="login" src="imagenes/login.png"> 
+            <label for="usuario"> Usuario 1 </label>             
+        </header>
+
+        <nav>
+            <h6> <label for="texto_buscar"> Buscar en la web :</label>
+        <input type="buscar" name="buscar" size="20" maxlength="10">
+         <img id="imagen_buscador" src="imagenes/lupa.png">
+         <br/>
+        </h6>
+        </nav>
+   
+    
+    <main>
+
+        
+        <section>
+
+            <nav>
+
+            <h1>Menú</h1>
+                  
+            <article>
+                <label>Agregar Producto</label>
+                <br/>  <br/> 
+            <img id="imagen_agregar" src="imagenes/agregar.png">     
+            <br/>  <br/>           
+            </article>
+            <article>
+                <label>Administrar categorías</label>
+                <br/>  <br/> 
+                <img id="imagen_administrar" src="imagenes/administrar.png">   
+                <br/>  <br/>              
+            </article>
+            <article>
+                <label>Existencias</label>
+                <br/>  <br/> 
+                <img id="imagen_existencias" src="imagenes/database.png">    
+                <br/>  <br/>             
+            </article>
+            <article>
+                <label>Administrar pagos</label>
+                <br/>  <br/> 
+                <img id="imagen_pagos" src="imagenes/pagos.png">                 
+            </article>  
+            </nav>
+
+           
+
+
+         <form action="producto" method="POST">
+                <br/>  <br/>
+            <fieldset>
+                <legend>Agregar producto</legend>
+                <br/>  <br/> 
+                <label for="codigo">Código* : </label>
+                 <input type="tel" id="codigo" maxlength="6" placeholder="Solo números" pattern="[0-6]{6}" title="Debe ingresar solo 6 números" required>
+                 <button type="submit" value="enviar">Validar</button>
+                <br/>  <br/>
+                <label for="nombre">Nombre* :</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre(s)" pattern="[a-zA-Z\s]{2,100}" title="Solo letras" required> </text>
+                <br/>  <br/>
+                <label for="abreviatura">Abreviatura :</label>
+                <input type="text" id="abreviatura" placeholder="" pattern="[a-zA-Z\s]{2,100}" title="Solo letras" required> </text>
+                <br/>  <br/>
+                <label for="categoria">Categoría* :</label>
+                <select id="categoria">
+                    <option >Lácteos</option>
+                    <option >Panes especiales</option>
+                    <option >Pasteles</option>
+                    <option >Más ... </option>
+                </select>          
+                <br/>  <br/>
+                <label for="ruc">RUC proveedor* : </label>
+                 <input type="tel" id="ruc" maxlength="11" placeholder="Solo números" pattern="[0-11]{11}" title="Debe ingrsar solo 11 números" required>
+                 <br/>  <br/>
+                 <label for="precio">Precio* : </label>
+                 <input type="number" id="precio" pattern="" title="Debe ser distinto de cero" required>
+                 <br/>  <br/>
+                 <label for="etiqueta">Color de etiqueta : </label>
+                 <br/>  <br/>
+                 <label for="fecha">Fecha*: </label>
+                 <input type="datetime-local">
+                 <br/>  <br/>  
+                 <label for="estado">Estado* : </label>
+                 <label for="activo">Activo</label>
+                 <input type="checkbox" id="activo" name="activo" >
+                 <label for="activo">Suspendido</label>
+                 <input type="checkbox" id="suspendido" name="suspendido" >
+                 <label for="activo">De baja</label>
+                 <input type="checkbox" id="de_baja" name="debaja" >    
+                 <br/>  <br/>
+                 <label for="impuesto">Afecto a impuesto*: </label>
+                 <input type="checkbox" id="impuesto" name="impuesto">
+                 <br/>  <br/>
+                 <label for="foto">Foto : </label>
+                 <input type="file" name="foto" size="5 Mb">
+                 <br/>  <br/>
+                 <label for="biografia">Descripción</label>
+                <textarea id="biografia"></textarea>
+                <br/>  <br/>
+                <button type="submit" value="grabar">Grabar</button>
+                <button type="submit" value="limpiar">Limpiar</button>
+             </fieldset>
+          
+             </form>
+
+    
+            </section>  
+
+            
+    </main>
+
+    
+    <footer>
+       
+    <div  class = " pie de página " >
+        <div  class = " información " >
+            <a href = "/quehacemos/"> Que hacemos? </a> 
+            <a href = "/enlaces/"> Enlaces Principales </a> 
+            <a href = "/contacto/"> Contáctenos </a> 
+        </div >
+    </div >
+    </footer>
+
+</body>
+</html>
